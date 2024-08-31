@@ -27,7 +27,7 @@ const Homee = () => {
   useEffect(() => {
     const fetchHomeData = async () => {
       try {
-        const response = await axios.get('/api/admin/home');
+        const response = await axios.get('/api/admin/home/66d321a31815980f2ae7bc63');
         setHomeData(response.data);
       } catch (err) {
         setError('Failed to fetch home data');

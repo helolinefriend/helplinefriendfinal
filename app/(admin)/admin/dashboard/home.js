@@ -83,7 +83,7 @@ export default function HomeSettings() {
   useEffect(() => {
     const fetchHomeData = async () => {
       try {
-        const response = await axios.get('/api/admin/home');
+        const response = await axios.get('/api/admin/home/66d321a31815980f2ae7bc63');
         setHomeData(response.data);
       } catch (err) {
         toast.error('Error fetching home data plase reload the page..|');
