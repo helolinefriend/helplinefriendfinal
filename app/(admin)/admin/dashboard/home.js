@@ -5,12 +5,12 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from '../../../admincss/HomeSettings.module.css';
-import Homee from "../../../../components/topnavbar/Home"
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function HomeSettings() {
   const [homeData, setHomeData] = useState({
+    _id: '',
     title: '',
     subtitle: '',
     subtitle1: '',
@@ -104,18 +104,22 @@ export default function HomeSettings() {
     }));
   };
 
- 
-
   // const handleSave = async () => {
-  //   // toast.success('Saving home data: successfully!');
-  //   console.log('Saving home data:', homeData); // Add this line to inspect the payload
+  //   // console.log('Saving home data:', homeData); // Inspect the payload
   //   try {
-  //     const response = await axios.put('/api/admin/home', homeData);
+
+  //     const token = localStorage.getItem('token');
+  //     const response = await axios.put('/api/admin/home', homeData, {
+  //       headers: {
+  //         Authorization: `Bearer ${token}`,
+  //         'Content-Type': 'application/json',
+  //       },
+  //     });
+       
   //     if (response.status === 200) {
   //       toast.success('Home page data updated successfully');
-        
   //     } else {
-  //       toast.error('Failed to update home page data');      
+  //       toast.error('Failed to update home page data');
   //     }
   //   } catch (err) {
   //     console.error('Error updating home data:', err);
@@ -123,17 +127,18 @@ export default function HomeSettings() {
   //     alert('Failed to update home page data');
   //   }
   // };
-
+  
 
   const handleSave = async () => {
-    // console.log('Saving home data:', homeData); // Inspect the payload
     try {
-      const response = await axios.put('/api/admin/home', homeData, {
+      const token = localStorage.getItem('token');
+      const response = await axios.put(`/api/admin/home/${homeData._id}`, homeData, {
         headers: {
+          Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json',
         },
       });
-      
+
       if (response.status === 200) {
         toast.success('Home page data updated successfully');
       } else {
@@ -145,7 +150,6 @@ export default function HomeSettings() {
       alert('Failed to update home page data');
     }
   };
-  
  
   
 
