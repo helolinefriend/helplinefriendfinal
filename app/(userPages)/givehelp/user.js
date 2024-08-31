@@ -273,7 +273,7 @@ const User = () => {
       {loading && <Loader />}
       {referrer === null || referrerProfile === null ? (
         <div className={styles.title}>
-          <h2>You don't have a referrer. Please direct the full payment to the company.</h2>
+          <h2>You dont have a referrer. Please direct the full payment to the company.</h2>
         </div>
       ) : (
         <form onSubmit={handleUpload} className={styles.form}>
