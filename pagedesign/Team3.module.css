@@ -1,0 +1,101 @@
+/* Base container */
+.tearmcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Title styling */
+  .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Team Details Container */
+  .teamDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Profile Picture Container */
+  .profilePicContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .profilePicContainer:hover {
+    transform: scale(1.05);
+  }
+  
+  .screenshot {
+    border-radius: 50%;
+    border: 2px solid #333;
+    margin-top: 10px;
+  }
+  
+  /* Modal Overlay */
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .modalContent h2 {
+    margin-bottom: 15px;
+  }
+  
+  .modalContent p {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .screenshot {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .screenshot {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

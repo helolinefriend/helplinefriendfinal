@@ -1,0 +1,34 @@
+ npm install @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
+
+
+MONGODB_URI= "mongodb+srv://Authentication:Authentication@cluster0.hj08xhf.mongodb.net/"
+JWT_SECRET= "xxx2FxXT1NTf2K1Mo4i6AOvtdI"
+
+JWT_REFRESH_SECRET ="2FxXT1NTf2K1Mo4i6"
+
+NEXT_PUBLIC_BASE_URL="helplinefrined.vercel.app"
+
+CLOUDINARY_NAME = "dp7anotjs"
+CLOUDINARY_API_KEY = "111334292444649"
+CLOUDINARY_API_SECRET = "zPtjPNgiP4sAowHsdUWIQPCSvqQ"
+
+
+
+
+
+helplinefriends7@gmail.com 
+mongodb google login
+mongodb user pass 
+helplinefriend 
+helplinefriend
+
+MONGODB_URI= "mongodb+srv://helplinefriend:helplinefriend@cluster0.imzjc.mongodb.net/"
+JWT_SECRET= "xxx2FxXT1NTf2K1Mo4i6AOvtdI"
+JWT_REFRESH_SECRET ="2FxXT1NTf2K1Mo4i6"
+NEXT_PUBLIC_BASE_URL="http://localhost:3000"
+CLOUDINARY_NAME = "de9qndnrz"
+CLOUDINARY_API_KEY = "294539321562767"
+CLOUDINARY_API_SECRET ="vwm7QURRVrAp5yyfhZbUAHBOIdk"
+JWT_REFRESH_SECRET ="2FxXT1NTf2K1Mo4i6"
+
+

@@ -1,0 +1,231 @@
+/* Base container */
+.tearmcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Title styling */
+  .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tearmcontainer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  .teamDetails {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .referrer, .myInfoSection {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .referredUser {
+   
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+
+  .referredUser h2{
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    width: 100%;
+     }
+
+     .referredUser div {
+        margin: 10px;
+        padding: 20px;
+        transition: transform 0.2s;
+}
+  
+
+  .connectionLine {
+    position: relative;
+   
+  }
+  
+  /* .connectionLine::before,
+  .connectionLine::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+  } */
+  
+  /* .connectionLine::before {
+    left: -10px;
+  }
+  
+  .connectionLine::after {
+    right: -10px;
+  } */
+  
+  .screenshot {
+    border-radius: 50%;
+    margin-top: 10px;
+    width: 50%;
+    width: 50%;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  
+  
+  /* Team Details Container */
+  .teamDetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* My Info Section */
+  .myInfoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Profile Picture */
+  .screenshot {
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 2px solid #333;
+  }
+  
+  /* Referrer and referred users */
+  .referrer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .referredUser  {
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+  
+  .referrer:hover, .referredUser:hover {
+    transform: scale(1.05);
+  }
+  .teamDetails p{
+    font-size: 18px;
+      font-weight: 500;
+    color: #fff; 
+    
+  }
+  
+  /* Desktop Layout */
+ .h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Mobile Layout */
+  @media (max-width: 767px) {
+    .teamDetails {
+      flex-direction: column;
+    }
+  
+    .screenshot {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  /* Lines to connect circles */
+  .connectionLine {
+    position: relative;
+  }
+  
+  /* .connectionLine::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 2px;
+    background-color: #333;
+    transform: translate(-50%, -50%);
+  } */
+  
