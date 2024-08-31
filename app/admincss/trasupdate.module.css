@@ -1,0 +1,113 @@
+.transactionContainer {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.transactionContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333333;
+    text-align: center;
+}
+
+.transactionCard {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #4CAF50;
+    transition: transform 0.2s ease-in-out;
+}
+
+.transactionCard:hover {
+    transform: translateY(-5px);
+}
+
+.transactionCard p {
+    font-size: 1.1rem;
+    margin: 12px 0;
+    color: #555555;
+}
+
+.transactionCard strong {
+    color: #333333;
+}
+
+.screenshotContainer {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.screenshotContainer strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333333;
+}
+
+.screenshotpig {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.screenshotpig:hover {
+    transform: scale(1.1);
+}
+
+.transactionContainer form {
+    margin-bottom: 20px;
+}
+
+.transactionContainer form div {
+    margin-bottom: 15px;
+}
+
+.transactionContainer form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.transactionContainer form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.transactionContainer button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transactionContainer button:disabled {
+    background-color: #a5d6a7;
+    cursor: not-allowed;
+}
+
+.transactionContainer button:not(:disabled):hover {
+    background-color: #45a049;
+}
